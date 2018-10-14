@@ -22,7 +22,7 @@
                 }
             ],
             "source": "cleanCensus.R",
-            "target": "data.csv"
+            "target": "PopulationArrestsGeo.csv"
         },
         {
             "ports": [
@@ -52,7 +52,7 @@
             "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
-            "name": "data.csv"
+            "name": "PopulationArrestsGeo.csv"
         },
         {
             "assigned_to": "rncasagr",
@@ -73,6 +73,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-14 17:56:08",
+    "updated_at": "2018-10-14 17:56:43",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
