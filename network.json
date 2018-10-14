@@ -34,6 +34,17 @@
             ],
             "source": "clean.R",
             "target": "mergeData.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPop",
+                    "output": "arrestsPop",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "mergeData.R",
+            "target": "mergeGeoData.R"
         }
     ],
     "nodes": [
@@ -56,10 +67,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "rncasagr",
             "desc": "",
-            "name": "mergeGeoData.R"
+            "name": "mergeGeoData.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-14 17:53:45",
+    "updated_at": "2018-10-14 17:54:27",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
