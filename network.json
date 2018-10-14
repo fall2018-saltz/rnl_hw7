@@ -39,7 +39,7 @@
         {
             "ports": [
                 {
-                    "output": "arrestsPop",
+                    "output": "arrestsPopState",
                     "type": "csv"
                 }
             ],
@@ -73,6 +73,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-14 17:57:01",
+    "updated_at": "2018-10-14 17:57:15",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
