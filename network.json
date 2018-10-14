@@ -12,7 +12,7 @@
                 }
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
-            "target": "clean.R"
+            "target": "cleanCensus.R"
         },
         {
             "ports": [
@@ -21,7 +21,7 @@
                     "type": "csv"
                 }
             ],
-            "source": "clean.R",
+            "source": "cleanCensus.R",
             "target": "data.csv"
         },
         {
@@ -32,7 +32,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "clean.R",
+            "source": "cleanCensus.R",
             "target": "mergeData.R"
         },
         {
@@ -55,12 +55,6 @@
             "name": "data.csv"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "",
-            "name": "clean.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "rncasagr",
             "desc": "",
             "name": "mergeData.R",
@@ -71,8 +65,14 @@
             "desc": "",
             "name": "mergeGeoData.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "cleanCensus.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-14 17:54:27",
+    "updated_at": "2018-10-14 17:55:53",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
