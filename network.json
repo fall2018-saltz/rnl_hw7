@@ -17,16 +17,6 @@
         {
             "ports": [
                 {
-                    "output": "clean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanCensus.R",
-            "target": "PopulationArrestsGeo.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "clean_data",
                     "output": "clean_data",
                     "type": "r_obj"
@@ -45,6 +35,16 @@
             ],
             "source": "mergeArrestsData.R",
             "target": "mergeGeoData.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "arrestsPop",
+                    "type": "csv"
+                }
+            ],
+            "source": "mergeGeoData.R",
+            "target": "PopulationArrestsGeo.csv"
         }
     ],
     "nodes": [
@@ -73,6 +73,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-14 17:56:43",
+    "updated_at": "2018-10-14 17:57:01",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
