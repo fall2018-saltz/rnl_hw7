@@ -96,6 +96,16 @@
             ],
             "source": "ColorByMurder.R",
             "target": "CentersByPopulation.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.population",
+                    "type": "png"
+                }
+            ],
+            "source": "CentersByPopulation.R",
+            "target": "CentersByPopulation.png"
         }
     ],
     "nodes": [
@@ -151,6 +161,6 @@
             "name": "CentersByPopulation.png"
         }
     ],
-    "updated_at": "2018-10-15 17:05:26",
+    "updated_at": "2018-10-15 17:05:38",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
