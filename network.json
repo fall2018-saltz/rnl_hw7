@@ -146,8 +146,11 @@
             "desc": "",
             "name": "CentersByPopulation.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "CentersByPopulation.png"
         }
     ],
-    "updated_at": "2018-10-15 17:05:12",
+    "updated_at": "2018-10-15 17:05:26",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
