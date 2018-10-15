@@ -1,6 +1,7 @@
 
 library(ggmap)
 library(ggplot2)
+
 us <- map_data("state")
 
 map.murder <- ggplot(arrestsPopState, aes(map_id = tolower(state.name))) + 
