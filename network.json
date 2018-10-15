@@ -112,10 +112,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "rncasagr",
             "desc": "",
-            "name": "ColorByMurder.R"
+            "name": "ColorByMurder.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "ColorByMurder.png"
         }
     ],
-    "updated_at": "2018-10-15 16:57:31",
+    "updated_at": "2018-10-15 16:59:04",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
