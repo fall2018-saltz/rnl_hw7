@@ -74,8 +74,12 @@
         },
         {
             "name": "ColorByArea.png"
+        },
+        {
+            "desc": "",
+            "name": "ColorByArea.R"
         }
     ],
-    "updated_at": "2018-10-15 16:52:44",
+    "updated_at": "2018-10-15 16:52:59",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
