@@ -85,6 +85,17 @@
             ],
             "source": "ColorByMurder.R",
             "target": "ColorByMurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "map.murder",
+                    "output": "map.murder",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "ColorByMurder.R",
+            "target": "CentersByPopulation.R"
         }
     ],
     "nodes": [
@@ -131,10 +142,12 @@
             "name": "ColorByMurder.png"
         },
         {
+            "assigned_to": "rncasagr",
             "desc": "",
-            "name": "CentersByPopulation.R"
+            "name": "CentersByPopulation.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-15 17:04:07",
+    "updated_at": "2018-10-15 17:05:12",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
