@@ -45,6 +45,16 @@
             ],
             "source": "mergeGeoData.R",
             "target": "PopulationArrestsGeo.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "ColorByArea.R"
         }
     ],
     "nodes": [
@@ -80,6 +90,6 @@
             "name": "ColorByArea.R"
         }
     ],
-    "updated_at": "2018-10-15 16:52:59",
+    "updated_at": "2018-10-15 16:53:37",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
