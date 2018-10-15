@@ -115,6 +115,16 @@
             ],
             "source": "PopulationArrestsGeo.csv",
             "target": "CentersZoomed.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.zoomed",
+                    "type": "png"
+                }
+            ],
+            "source": "CentersZoomed.R",
+            "target": "CentersZoomed.png"
         }
     ],
     "nodes": [
@@ -179,6 +189,6 @@
             "name": "CentersZoomed.png"
         }
     ],
-    "updated_at": "2018-10-15 19:15:24",
+    "updated_at": "2018-10-15 19:15:36",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
