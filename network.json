@@ -75,6 +75,16 @@
             ],
             "source": "PopulationArrestsGeo.csv",
             "target": "ColorByMurder.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.murder",
+                    "type": "png"
+                }
+            ],
+            "source": "ColorByMurder.R",
+            "target": "ColorByMurder.png"
         }
     ],
     "nodes": [
@@ -121,6 +131,6 @@
             "name": "ColorByMurder.png"
         }
     ],
-    "updated_at": "2018-10-15 16:59:04",
+    "updated_at": "2018-10-15 16:59:41",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
