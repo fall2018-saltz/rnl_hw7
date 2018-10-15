@@ -105,6 +105,16 @@
             ],
             "source": "PopulationArrestsGeo.csv",
             "target": "CentersByPopulation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "CentersZoomed.R"
         }
     ],
     "nodes": [
@@ -160,10 +170,12 @@
             "name": "CentersByPopulation.png"
         },
         {
+            "assigned_to": "rncasagr",
             "desc": "",
-            "name": "CentersZoomed.R"
+            "name": "CentersZoomed.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-15 19:13:57",
+    "updated_at": "2018-10-15 19:15:12",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
