@@ -99,7 +99,7 @@
         {
             "ports": [
                 {
-                    "input": "arrestPopState",
+                    "input": "arrestsPopState",
                     "type": "csv"
                 }
             ],
@@ -160,6 +160,6 @@
             "name": "CentersByPopulation.png"
         }
     ],
-    "updated_at": "2018-10-15 17:07:23",
+    "updated_at": "2018-10-15 17:08:01",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
