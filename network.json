@@ -1,0 +1,194 @@
+{
+    "collaborators": [
+        "rncasagr"
+    ],
+    "created_at": "2018-10-14 17:50:29",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "cleanCensus.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "clean_data",
+                    "output": "clean_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanCensus.R",
+            "target": "mergeArrestsData.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPop",
+                    "output": "arrestsPop",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "mergeArrestsData.R",
+            "target": "mergeGeoData.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "mergeGeoData.R",
+            "target": "PopulationArrestsGeo.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "ColorByArea.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.area",
+                    "type": "png"
+                }
+            ],
+            "source": "ColorByArea.R",
+            "target": "ColorByArea.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "ColorByMurder.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.murder",
+                    "type": "png"
+                }
+            ],
+            "source": "ColorByMurder.R",
+            "target": "ColorByMurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.population",
+                    "type": "png"
+                }
+            ],
+            "source": "CentersByPopulation.R",
+            "target": "CentersByPopulation.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "CentersByPopulation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestsPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "CentersZoomed.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.zoomed",
+                    "type": "png"
+                }
+            ],
+            "source": "CentersZoomed.R",
+            "target": "CentersZoomed.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "name": "PopulationArrestsGeo.csv"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "mergeGeoData.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "cleanCensus.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "mergeArrestsData.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "ColorByArea.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "ColorByArea.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "ColorByMurder.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "ColorByMurder.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "CentersByPopulation.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "CentersByPopulation.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "",
+            "name": "CentersZoomed.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "CentersZoomed.png"
+        }
+    ],
+    "updated_at": "2018-10-15 19:15:36",
+    "url": "https://github.com/fall2018-saltz/rnl_hw7"
+}
