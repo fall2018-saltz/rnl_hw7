@@ -89,23 +89,22 @@
         {
             "ports": [
                 {
-                    "input": "map.murder",
-                    "output": "map.murder",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "ColorByMurder.R",
-            "target": "CentersByPopulation.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "map.population",
                     "type": "png"
                 }
             ],
             "source": "CentersByPopulation.R",
             "target": "CentersByPopulation.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrestPopState",
+                    "type": "csv"
+                }
+            ],
+            "source": "PopulationArrestsGeo.csv",
+            "target": "CentersByPopulation.R"
         }
     ],
     "nodes": [
@@ -161,6 +160,6 @@
             "name": "CentersByPopulation.png"
         }
     ],
-    "updated_at": "2018-10-15 17:05:38",
+    "updated_at": "2018-10-15 17:07:23",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
