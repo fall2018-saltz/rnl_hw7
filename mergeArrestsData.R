@@ -2,7 +2,7 @@
 # Copy the arrests data to a local variable
 arrests <- USArrests
 
-# Create a merged dataframe
+# Create a merged dataframe with census data and arrest data
 # Create a new column in arrests with state names
 arrests$State <- rownames(arrests)
 # Remove the District of Columbia from the census data 
