@@ -2,6 +2,7 @@
 library(ggmap)
 library(ggplot2)
 
+# Assign map data to a local variable
 us <- map_data("state")
 
 map.area <- ggplot(arrestsPopState, aes(map_id = tolower(state.name))) + 
