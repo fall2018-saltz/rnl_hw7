@@ -11,15 +11,5 @@ map.population <- ggplot(arrestsPopState, aes(map_id = tolower(state.name))) + #
   expand_limits(x=us$long, y=us$lat) + # Define map limits
   coord_map() + # Ensure map coordinates are normalized
   ggtitle("US State Centers by Population") + # Add title
-  # Add state centers and define size as related to population (below):
-  geom_point(aes(x=arrestsPopState$x, y=arrestsPopState$y), size=arrestsPopState$population/4000000)
-
-
-us <- map_data("state")
-
-
-map.murder <- ggplot(arrestsPopState, aes(map_id = tolower(state.name))) + # Define plot
-  geom_map (map=us, aes(fill=Murder)) +
-  expand_limits(x=us$long, y=us$lat) +
-  coord_map() +
-  ggtitle("US States by Murder")
+  geom_point(aes(x=arrestsPopState$x, y=arrestsPopState$y), # Add state centers
+    size=arrestsPopState$population/4000000) # Define size of centers as they relate to state population size
