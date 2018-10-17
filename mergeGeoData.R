@@ -2,7 +2,7 @@
 library(ggplot2)
 library(ggmap)
 
-# Create a new dataframe with geographical data
+# Create a new dataframe with geographical data (center and area of each state)
 stateStats <- data.frame(state.name, state.center, state.area)
 
 # Merge the geographical dataframe with the combined census / arrest dataframe
