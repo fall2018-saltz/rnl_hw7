@@ -11,6 +11,7 @@ map.population <- ggplot(arrestsPopState, aes(map_id = tolower(state.name))) + #
   expand_limits(x=us$long, y=us$lat) + # Define map limits
   coord_map() + # Ensure map coordinates are normalized
   ggtitle("US State Centers by Population") + # Add title
+  # Add state centers and define size as related to population (below):
   geom_point(aes(x=arrestsPopState$x, y=arrestsPopState$y), size=arrestsPopState$population/4000000)
 
 
