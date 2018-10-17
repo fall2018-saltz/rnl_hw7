@@ -5,7 +5,7 @@ library(ggplot2)
 # Assign map data to a local variable
 us <- map_data("state")
 
-# Zoom in on color-coded, map with sized state centers
+# Zoom in on color-coded map with sized state centers
 map.zoomed <- ggplot(arrestsPopState, aes(map_id = tolower(state.name))) + # Define plot
   geom_map (map=us, aes(fill=Murder)) + # Add map data and define fill (color)
   expand_limits(x=us$long, y=us$lat) + # Define map limits
