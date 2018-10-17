@@ -10,5 +10,5 @@ population <- clean_data[which(clean_data$stateName!="District of Columbia"),]
 # Combine the two dataframes
 arrestsPop <- cbind(arrests, population)
 # Remove the duplicate column
-arrestsPop2 <- arrestsPop[,-5]
+arrestsPop <- arrestsPop[,-6]
 
