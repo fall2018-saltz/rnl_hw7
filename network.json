@@ -125,16 +125,6 @@
             ],
             "source": "CentersZoomed.R",
             "target": "CentersZoomed.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "arrestsPop",
-                    "type": "csv"
-                }
-            ],
-            "source": "mergeArrestsData.R",
-            "target": "csvfile6294.csv"
         }
     ],
     "nodes": [
@@ -197,11 +187,8 @@
         },
         {
             "name": "CentersZoomed.png"
-        },
-        {
-            "name": "csvfile6294.csv"
         }
     ],
-    "updated_at": "2018-10-17 16:01:42",
+    "updated_at": "2018-10-17 16:17:45",
     "url": "https://github.com/fall2018-saltz/rnl_hw7"
 }
